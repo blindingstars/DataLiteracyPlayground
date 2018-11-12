@@ -1,0 +1,32 @@
+.content-card {
+  &__wrapper {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 19px 38px rgba($logo-dark, 0.2),
+                0 15px 12px rgba($logo-dark, 0.1);
+    overflow: hidden;
+  }
+
+  &__index-header,
+  &__header {
+    background-color: var(--active-category-color, #444);
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-size: 1.2em;
+
+    a {
+      color: #fff;
+    }
+  }
+}
+
+.card-image {
+  @include large {
+    max-width: 450px;
+  }
+
+  img {
+    display: block;
+  }
+}
